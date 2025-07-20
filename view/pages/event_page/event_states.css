@@ -1,0 +1,64 @@
+.event-state {
+    color: var(--bs-light);
+    transition: 1s;
+}
+
+.event-state {
+    padding: 12px;
+    font-size: large;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.paused-event-state {
+    border-color: var(--bs-warning);
+}
+
+.paused-event-state span {
+    color: var(--bs-warning);
+}
+
+.upcoming-event-state {
+    border-color: var(--bs-danger);
+}
+
+.upcoming-event-state span {
+    color: var(--bs-danger);
+}
+
+.finished-event-state {
+    border-color: var(--bs-success);
+}
+
+.finished-event-state span {
+    color: var(--bs-success);
+}
+
+.continuous-event-state {
+    border-color: var(--bs-light);
+}
+
+.continuous-event-state span {
+    color: var(--bs-light);
+}
+
+button.paused-event-state {
+    background-color: var(--bs-warning);
+    color: black;
+}
+
+button.continuous-event-state {
+    background-color: var(--bs-light);
+    color: white;
+}
+
+button.finished-event-state {
+    background-color: var(--bs-success);
+    color: white;
+}
+
+button.upcoming-event-state {
+    background-color: var(--bs-danger);
+    color: white;
+}

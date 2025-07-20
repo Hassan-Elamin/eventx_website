@@ -1,0 +1,25 @@
+@import url(../../../css/style.css);
+@import url(../../../css/event_card.css);
+
+.option-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    margin: 6px;
+    box-shadow: 1px 1px 5px var(--bs-light);
+    max-width: 16rem;
+    min-width: 12rem;
+}
+
+.option-card i {
+    font-size: 24px;
+}
+
+.option-card .card-title {
+    font-size: 12px;
+}
+
+.option-card>* {
+    margin: 12px;
+}

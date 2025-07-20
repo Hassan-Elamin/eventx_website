@@ -1,0 +1,89 @@
+@import url(../../css/style.css);
+@import url(../../includes/app_header/header_style.css);
+
+#main-event {
+    display: flex;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    justify-content: space-around;
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;  
+    background-color: black; 
+    background-image: linear-gradient(90deg, rgba(var(--bs-body-bg-rgb) , 0.25), var(--bs-body-bg));
+}
+
+#ev-img img {
+    object-fit: contain !important;
+    text-align: left;
+    width: 80%;
+    filter: opacity(0.8);
+}
+
+.event-interface {
+    margin: 0 16px;
+}
+
+.filter-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    row-gap: 12px;
+    padding: 12px 8px;
+}
+
+.color-layer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: rgba(var(--bs-dark-rgb), 0.65);
+}
+
+.main-event button:hover {}
+
+.cards-grid-view {
+    justify-content: space-around;
+}
+
+.row {
+    margin: 0;
+}
+
+#followingCheck {
+    padding: 6px;
+}
+
+.filter-btn {
+    width: 30%;
+}
+
+.category-options .dropdown-menu.show{
+    height: 20vh;
+}
+
+.filter-menu .dropdown-menu.show {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.filter-menu .dropdown-menu.show .dropdown-item {
+    text-align: right;
+}
+
+.cancel-btn {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .filter-menu {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+}

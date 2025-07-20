@@ -1,0 +1,14 @@
+@import url(../../css/style.css);
+
+.hero {
+    background-image: url(../../../assets/images/moks/OfficialKevents_13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.25;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}

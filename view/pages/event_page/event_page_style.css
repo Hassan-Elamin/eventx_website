@@ -1,0 +1,71 @@
+@import url(../../css/style.css);
+@import url(./event_states.css);
+
+.images_carousal {
+    max-height: 60vh;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+.images_carousal img,
+.image-end {
+    height: 50vh;
+    width: 100%;
+}
+
+.image-end {
+    background-image: linear-gradient(rgba(var(--bs-dark-rgb), 0), rgb(26, 9, 51, 0.99));
+}
+
+.images_carousal img {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.booking-btn {
+    font-size: large;
+}
+
+.categories-block {
+    padding: 12px;
+}
+
+.categories-block .category-btn {
+    margin: 0 8px;
+}
+
+.category-btn {
+    font-size: 18px;
+}
+
+.ticket-price {
+    margin: 0 12px;
+}
+
+.org-profile-img {
+    padding: 6px;
+    background-color: indigo;
+    border-radius: 50%;
+}
+
+.org-profile-img img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.org-profile>* {
+    margin: 6px;
+}
+
+.org-details>* {
+    margin: 16px 0;
+}
+
+.org-name {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.org-email {}

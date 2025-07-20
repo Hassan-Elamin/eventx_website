@@ -1,0 +1,7 @@
+.event-details-table .table-header{
+    background-color: var(--bs-primary) !important;
+}
+
+.event-details-table .table-header th {
+    background: inherit !important;
+}

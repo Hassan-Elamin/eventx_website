@@ -1,0 +1,90 @@
+.features-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.full-slide {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 24px 0;
+    background-image: linear-gradient(120deg,
+            rgba(var(--bs-primary-rgb), 0.75),
+            rgba(var(--bs-dark-rgb), 0.75));
+    color: white;
+    text-align: center;
+}
+
+.full-slide .card-title {
+    letter-spacing: 1.6px;
+    font-size: 18px;
+}
+
+.full-slide p {
+    text-align: center;
+    width: 50%;
+}
+
+.main-slide img {
+    margin: 8px 16px;
+    width: 50%;
+}
+
+.main-slide {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bs-dark);
+    background-image: linear-gradient(120deg,
+            rgba(var(--bs-secondary-rgb), 0.25),
+            rgba(var(--bs-dark-rgb), 0.75),
+            rgba(var(--bs-dark-rgb), 0.75));
+}
+
+.full-slide p,
+.main-slide p {
+    width: 80%;
+    font-size: large;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.full-slide span,
+.main-slide span {
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.full-slide,
+.main-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    height: 100%;
+}
+
+.color-layer {
+    padding: 12px 0;
+    text-align: center;
+}
+
+.main-slide {
+    color: var(--bs-gray-100);
+}
+
+section>div {
+    flex-direction: row;
+}
+
+@media screen and (max-width:600px) {
+    section>div {
+        flex-direction: column;
+    }
+
+    .main-slide {
+        width: 100% !important;
+    }
+}

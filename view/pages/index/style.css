@@ -1,0 +1,113 @@
+@import url(../../css/style.css);
+@import url(./slides_section.css);
+@import url(../../css/bootstrap.min.css);
+
+body {
+  background: no-repeat url(../../../assets/images/long-truong-Y5PXVs1LpY4-unsplash.jpg);
+  background-size: cover;
+}
+
+@keyframes intro-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-120px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.background-container section {
+  min-height: 100vh;
+}
+
+#main-slogan {
+  z-index: -1;
+  padding: 48px 0;
+  animation: intro-animation linear;
+  animation-duration: 1s;
+  transition: 1s;
+}
+
+#main-slogan h1 {
+  font-size: 48px;
+}
+
+#main-slogan p {
+  font-size: 24px;
+  font-family: var(--headers-font);
+}
+
+.navbar {
+  background: var(--bs-primary);
+}
+
+.navbar-brand {
+  font-family: var(--titles-font);
+  font-size: 28px;
+}
+
+.navbar-brand img {
+  max-width: 64px;
+}
+
+.navbar-brand,
+.navbar-nav a {}
+
+#navbarNavAltMarkup {
+  justify-content: center;
+}
+
+section {
+  background: var(--primary);
+}
+
+.white-line{
+  height: 2px;
+  color: white;
+}
+
+.dropdown-menu {
+  margin-bottom: 8px;
+}
+
+footer {
+  background: url(../../../assets/images/parabolic-rectangle.svg) no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+footer>.color-layer {
+  background-color: none;
+  min-height: 0px;
+  padding: 0;
+}
+
+#desktop-footer {
+  display: block;
+}
+
+#mobile-footer{
+  display: none;
+}
+
+.main-slogan * {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.start-btn {
+  font-size: larger;
+  font-family: var(--titles-font);
+}
+
+@media screen and (max-width:600px) {
+  #mobile-footer {
+    display: block;
+  }
+  #desktop-footer{
+    display: none;
+  }
+}
