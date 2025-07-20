@@ -1,0 +1,101 @@
+@import url('./bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cute+Font&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url(../includes/app_header/header_style.css);
+
+:root {
+  --headers-font: 'Cabin', sans-serif;
+  --titles-font: "Black Ops One", system-ui;
+  --body-font: "Open Sans",
+    sans-serif;
+}
+
+.cute-font-regular {
+  font-family: "Cute Font", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.black-ops one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-gradient-success {
+  font-size: 72px;
+  background: -webkit-linear-gradient(150deg , var(--bs-success), var(--bs-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  font-family: var(--body-font) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--titles-font) !important;
+  letter-spacing: 2px;
+}
+
+footer {
+  overflow: hidden;
+}
+
+.background-container {
+  min-height: 100%;
+  background: linear-gradient(120deg, #3d415640, #3d4156);
+  z-index: 999;
+  background-size: cover;
+}
+
+.glass-effect {
+  background-color: white;
+  backdrop-filter: blur(12px);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.color-layer {
+  min-height: 50vh;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(var(--bs-primary-rgb), 0.75);
+}
+
+.v-line {
+  margin: 0 8px;
+  border-left: 4px solid;
+}
+
+.vertical-line {
+  display: relative;
+  transform: rotate(90deg);
+
+  margin: 0 6px;
+  height: 6px;
+}
+
+.custom-card {
+  cursor: pointer !important;
+}
+
+.custom-card:hover {
+  transform: scale(1.05, 1.05) !important;
+  transition: 0.5s !important;
+}

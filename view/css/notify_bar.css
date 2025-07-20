@@ -1,0 +1,45 @@
+@keyframes getDown {
+    from {
+        transform: translateY(-60px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.notification-top-bar {
+    margin: 20px auto !important; 
+    padding: 10px 20px;
+    transition: 2s ease-in-out;
+    position: fixed;
+    top: 0px;
+    line-height: 40px;
+    width: 90%;
+    background: #1ABC9C;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    animation: getDown 1.25s;
+    left: 5%;
+}
+
+.notification-top-bar p {
+    padding: 0;
+    margin: 0;
+    text-shadow: 2.5px 2.5px 7.5px rgba(0, 0, 0, 0.5);
+}
+
+.notification-top-bar p a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #FFF;
+    color: #1ABC9C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.notification-content {
+    font-size: larger;
+}

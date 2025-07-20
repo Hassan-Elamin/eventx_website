@@ -1,0 +1,120 @@
+.eventv-card {
+    margin: 8px;
+    padding: 0;
+    cursor: pointer;
+    min-width: 14rem !important;
+    max-width: 18rem !important;
+    align-content: space-around;
+}
+
+.eventv-card:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.upcoming-eventv-card {
+    animation: upcomingEventCardShadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.btn-group {
+    margin: 0 8px;
+}
+
+#events-view {
+    padding: 12px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card-body h5 {
+    margin: 8px 6px;
+}
+
+.card-body p {
+    margin: 6px 6px 12px 6px !important;
+}
+
+.card-body img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0.8);
+    transition: filter 0.4s;
+}
+
+.eventv-card:hover img {
+    filter: grayscale(0);
+}
+
+.cardv-header {
+    margin: 6px;
+}
+
+.ev-state {
+    position: absolute;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.75);
+}
+.no-events-found-model {
+    text-align: center;
+}
+.no-events-found-model > i {
+    font-size: 56px ;
+}
+
+@keyframes upcomingEventCardShadow {
+    0% {
+        box-shadow: 0 0 5px var(--bs-danger);
+    }
+
+    50% {
+        box-shadow: 0 0 15px var(--bs-danger);
+    }
+
+    100% {
+        box-shadow: 0 0 5px var(--bs-danger);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .eventv-card {
+        min-width: 90% !important;
+        min-height: 15vh;
+    }
+    .card-body {
+        flex-direction: row;
+        width: 100%;
+    }
+    .card-body img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        max-height: 100%;
+    }
+    .card-body>div {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body .card-text {
+        font-size: 14px;
+    }
+    .ev-state {
+        right: 0;
+        bottom: 0;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+    .cardv-header {
+        width: 25%;
+    }
+}

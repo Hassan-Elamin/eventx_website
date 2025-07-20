@@ -1,0 +1,10 @@
+
+
+@keyframes shadowIn {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow: 1px 1px 5px var(--bs-danger);
+    }
+}
